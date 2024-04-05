@@ -1,13 +1,8 @@
 import React, {useState} from "react";
+import { CardProp } from "../../types";
 import './Card.css';
 
-type Card = {
-    text: string
-}
 
-type CardProp = {
-    cards: Card []
-}
 
 const Cards: React.FC<CardProp> = ({cards}) => {
     const [currentCard, setCurrentCard] = useState(0)
