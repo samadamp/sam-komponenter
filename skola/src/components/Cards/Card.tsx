@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { CardProp } from "../../types";
-import './Card.css';
+import './Card.scss';
 
 
 
@@ -22,11 +22,13 @@ const Cards: React.FC<CardProp> = ({cards}) => {
 
 
     return (
-        <div>
-            <div>{cards[currentCard].text}</div>
-            <button onClick={previous}>{"<"}</button>
-            <button onClick={next}>{">"}</button>
+        <>
+            <h2 className="text">{cards[currentCard].text}</h2>
+        <div className="card">
+            <button className="cardButton" onClick={previous}>{"<"}</button>
+            <button className ="cardButton" onClick={next}>{">"}</button>
         </div>
+        </>
     );
 };
 

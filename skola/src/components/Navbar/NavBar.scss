@@ -1,0 +1,21 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+    .nav-links{
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+        margin-right: 3rem;
+        
+        
+    }
+    .logo{
+        margin-left: 1rem;
+    }
+    h1{
+        margin-left: 16rem;
+    }
+}
+
+
