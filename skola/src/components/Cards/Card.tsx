@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import './Card.css';
 
 type Card = {
     text: string
@@ -7,8 +8,6 @@ type Card = {
 type CardProp = {
     cards: Card []
 }
-
-
 
 const Cards: React.FC<CardProp> = ({cards}) => {
     const [currentCard, setCurrentCard] = useState(0)
@@ -30,8 +29,8 @@ const Cards: React.FC<CardProp> = ({cards}) => {
     return (
         <div>
             <div>{cards[currentCard].text}</div>
-            <button onClick={next}>Next</button>
-            <button onClick={previous}>Previous</button>
+            <button onClick={previous}>{"<"}</button>
+            <button onClick={next}>{">"}</button>
         </div>
     );
 };

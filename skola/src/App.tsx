@@ -1,5 +1,5 @@
-import NavBar from './components/NavBar'
-import Cards from './components/Card'
+import NavBar from './components/Navbar/NavBar'
+import Cards from './components/Cards/Card'
 import './App.css'
 
 function App() {

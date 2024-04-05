@@ -1,4 +1,4 @@
-import logo from '../../public/img/kiwi.svg'
+import logo from '../../../public/img/kiwi.svg'
 import './NavBar.css';
 
 
