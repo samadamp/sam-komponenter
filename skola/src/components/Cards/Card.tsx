@@ -9,7 +9,7 @@ const Cards: React.FC<CardProp> = ({cards}) => {
 
 
     const next = () => {
-        setCurrentCard((prev) => (prev + 1) % cards.length)
+        setCurrentCard((next) => (next + 1) % cards.length)
     }
 
     const previous = () => {
